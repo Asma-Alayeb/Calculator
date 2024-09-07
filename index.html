@@ -1,1 +1,72 @@
-Test html file
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAT 1340 Test 1 Formula Sheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #6a0dad; /* Purple */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 5px solid #b8860b; /* Dark Goldenrod border */
+            margin-bottom: 20px;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #6a0dad;
+        }
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .calculator-container {
+            margin-top: 20px;
+            height: 600px; /* Adjust height as needed */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MAT 1340 Test 1 Formula Sheet</h1>
+</header>
+
+<div class="content">
+    <h2>Quadratic Equation Formula</h2>
+    <p>The quadratic equation formula is:</p>
+    <p><span id="quadratic-formula"></span></p>
+    
+    <h2>Graphing Calculator Emulator</h2>
+    <p>You can use the following link to download or access the WabbitEmu calculator emulator:</p>
+    <p><a href="https://github.com/wabbitcode/WabbitEmu" target="_blank">WabbitEmu GitHub Repository</a></p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    // Display the quadratic formula using MathJax
+    document.getElementById('quadratic-formula').innerHTML = '\\(x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\)';
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, "quadratic-formula"]);
+</script>
+
+</body>
+</html>
